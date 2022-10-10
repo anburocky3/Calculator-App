@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btnStyle {
+  @apply bg-gray-700 rounded py-3 text-xl hover:bg-gray-600;
+}
+
+.btnOperand {
+  @apply bg-yellow-600 rounded py-3 text-xl hover:bg-yellow-500 font-semibold;
+}
+
+.btnEqual {
+  @apply bg-green-600 rounded py-3 text-xl hover:bg-green-500 font-semibold;
+}

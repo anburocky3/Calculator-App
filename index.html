@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator App</title>
+</head>
+
+<body>
+  <div id="app" class="bg-gray-900 min-h-screen text-white p-10">
+
+    <div class="bg-gray-800 max-w-sm mx-auto p-5 rounded-lg shadow-lg border border-gray-700">
+      <div class="text-xl tracking-wider font-montserrat">
+        Human calculator
+      </div>
+      <div class="">
+        <div class="px-5 my-10 text-2xl uppercase text-right">
+          50 + 4
+        </div>
+        <div class="flex">
+          <div class="w-10/12 pr-5">
+            <div class="grid grid-cols-3 gap-5">
+              <button
+                class="rounded py-3 text-red-500 bg-red-800 bg-opacity-25 text-xl font-semibold hover:bg-opacity-50">C</button>
+              <button class="btnStyle">(</button>
+              <button class="btnStyle">)</button>
+              <button class="btnStyle">7</button>
+              <button class="btnStyle">8</button>
+              <button class="btnStyle">9</button>
+              <button class="btnStyle">4</button>
+              <button class="btnStyle">5</button>
+              <button class="btnStyle">6</button>
+              <button class="btnStyle">1</button>
+              <button class="btnStyle">2</button>
+              <button class="btnStyle">3</button>
+              <button class="btnStyle col-span-2">0</button>
+              <button class="btnStyle">.</button>
+            </div>
+          </div>
+          <div class="w-2/12 flex flex-col gap-5">
+            <button class="btnOperand">/</button>
+            <button class="btnOperand">x</button>
+            <button class="btnOperand">-</button>
+            <button class="btnOperand">+</button>
+            <button class="btnEqual">=</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
