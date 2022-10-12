@@ -16,38 +16,39 @@
         Human calculator
       </div>
       <div class="">
-        <div class="px-5 my-10 text-2xl uppercase text-right">
-          50 + 4
+        <div class="px-5 my-5 uppercase text-right">
+          <div class="text-sm mb-2 tracking-widest text-gray-500" id="operands"></div>
+          <div class="text-3xl" id="result">0</div>
         </div>
         <div class="flex">
           <div class="w-10/12 pr-5">
             <div class="grid grid-cols-3 gap-5">
               <button
-                class="rounded py-3 text-red-500 bg-red-800 bg-opacity-25 text-xl font-semibold hover:bg-opacity-50">C</button>
+                class="rounded py-3 text-red-500 bg-red-800 bg-opacity-25 text-xl font-semibold hover:bg-opacity-50"
+                id="clearOperands">C</button>
               <button class="btnStyle">(</button>
               <button class="btnStyle">)</button>
-              <button class="btnStyle">7</button>
-              <button class="btnStyle">8</button>
-              <button class="btnStyle">9</button>
-              <button class="btnStyle">4</button>
-              <button class="btnStyle">5</button>
-              <button class="btnStyle">6</button>
-              <button class="btnStyle">1</button>
-              <button class="btnStyle">2</button>
-              <button class="btnStyle">3</button>
-              <button class="btnStyle col-span-2">0</button>
+              <button class="btnStyle" data-operand>7</button>
+              <button class="btnStyle" data-operand>8</button>
+              <button class="btnStyle" data-operand>9</button>
+              <button class="btnStyle" data-operand>4</button>
+              <button class="btnStyle" data-operand>5</button>
+              <button class="btnStyle" data-operand>6</button>
+              <button class="btnStyle" data-operand>1</button>
+              <button class="btnStyle" data-operand>2</button>
+              <button class="btnStyle" data-operand>3</button>
+              <button class="btnStyle col-span-2" data-operand>0</button>
               <button class="btnStyle">.</button>
             </div>
           </div>
           <div class="w-2/12 flex flex-col gap-5">
-            <button class="btnOperand">/</button>
-            <button class="btnOperand">x</button>
-            <button class="btnOperand">-</button>
-            <button class="btnOperand">+</button>
-            <button class="btnEqual">=</button>
+            <button class="btnOperand" data-operation>/</button>
+            <button class="btnOperand" data-operation>*</button>
+            <button class="btnOperand" data-operation>-</button>
+            <button class="btnOperand" data-operation>+</button>
+            <button class="btnEqual" id="equalOperator">=</button>
           </div>
         </div>
-
       </div>
     </div>
   </div>
